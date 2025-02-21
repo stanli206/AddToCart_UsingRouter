@@ -6,44 +6,14 @@ This is a simple shopping cart project built using ReactJS, React Router, JavaSc
 
 ## 🛠 Technologies Used
 
-⚛️ ReactJS
-
-🌍 React Router
-
-📜 JavaScript
-
-🏗 HTML
-
-🎨 Tailwind CSS
-
-🛒 Fake Store API
+⚛️ ReactJS 🌍 React Router 📜 JavaScript 🏗 HTML 🎨 Tailwind CSS 🛒 Fake Store API
 
 ## ✨ Features
 
-📦 Fetches product data from the Fake Store API.
-
-🖼 Displays product image, title, price, and description in a responsive layout.
-
-➕ Allows users to add products to the cart.
-
+📦 Fetches product data from the Fake Store API. 🖼 Displays product image, title, price, and description in a responsive layout.➕ Allows users to add products to the cart.
 ❌ If a product is already in the cart, a "Remove from Cart" button is shown.
-
 🛍 The cart page displays:
-
-🏷 Product name, price, quantity, and a "Remove from Cart(Remove)" button.
-
-🔼🔽 Option to increase or decrease the quantity of each item.
-
-💰 Dynamic total price calculation per item.
-
-📊 Total cart price updates automatically based on quantity.
-
-🎉 A 10% discount applied to the final price.
-
-🔄 Uses React Router for navigation between the home page (product list) and the cart page.
-
-🔙 A "Close Cart" button redirects users back to the home page.
-
+🏷 Product name, price, quantity, and a "Remove from Cart(Remove)" button.🔼🔽 Option to increase or decrease the quantity of each item.💰 Dynamic total price calculation per item.📊 Total cart price updates automatically based on quantity.🎉 A 10% discount applied to the final price.🔄 Uses React Router for navigation between the home page (product list) and the cart page.🔙 A "Close Cart" button redirects users back to the home page.
 
 ## 🔥Preview
 ![Screenshot 2025-02-21 130542](https://github.com/user-attachments/assets/92347b22-8607-4e8a-8984-f8a945713c0e)
