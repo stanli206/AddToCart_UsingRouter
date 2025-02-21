@@ -65,7 +65,7 @@ function Cart({ cart, setCart }) {
                 >
                   -
                 </button>
-                <span>{item.quantity}</span>
+                <span> <p className="inline text-gray-600 text-sm">Quantity: </p>{item.quantity}</span>
                 <button
                   className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600"
                   onClick={() => updateCartItem(item.id, item.quantity + 1)}
