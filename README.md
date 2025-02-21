@@ -1,8 +1,56 @@
-# React + Vite
+# 🛒 Add to Cart Task Using Router
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
 
-Currently, two official plugins are available:
+This is a simple shopping cart project built using ReactJS, React Router, JavaScript, HTML, and Tailwind CSS. It fetches products from the Fake Store API and displays them in a user-friendly format. Users can add or remove products from the cart, adjust quantities, and view the total price with a discount applied.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Technologies Used
+
+⚛️ ReactJS
+
+🌍 React Router
+
+📜 JavaScript
+
+🏗 HTML
+
+🎨 Tailwind CSS
+
+🛒 Fake Store API
+
+## ✨ Features
+
+📦 Fetches product data from the Fake Store API.
+
+🖼 Displays product image, title, price, and description in a responsive layout.
+
+➕ Allows users to add products to the cart.
+
+❌ If a product is already in the cart, a "Remove from Cart" button is shown.
+
+🛍 The cart page displays:
+
+🏷 Product name, price, quantity, and a "Remove from Cart(Remove)" button.
+
+🔼🔽 Option to increase or decrease the quantity of each item.
+
+💰 Dynamic total price calculation per item.
+
+📊 Total cart price updates automatically based on quantity.
+
+🎉 A 10% discount applied to the final price.
+
+🔄 Uses React Router for navigation between the home page (product list) and the cart page.
+
+🔙 A "Close Cart" button redirects users back to the home page.
+
+
+## 🔥Preview
+![Screenshot 2025-02-21 130542](https://github.com/user-attachments/assets/92347b22-8607-4e8a-8984-f8a945713c0e)
+
+![Screenshot 2025-02-21 125230](https://github.com/user-attachments/assets/1bec2ec3-12e3-44ab-8773-95712bde63ab)
+
+![Screenshot 2025-02-21 130247](https://github.com/user-attachments/assets/88ba4d4e-217c-4c5f-828c-337b2eaaf0e7)
+
+
+
