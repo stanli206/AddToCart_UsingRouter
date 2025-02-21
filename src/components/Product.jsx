@@ -17,17 +17,17 @@ function Product({ products, addToCart }) {
           <p className="text-gray-700 text-sm">
             {item.description.substring(0, 80)}...
           </p>
-          <h3 className="text-lg font-medium text-green-600">
-           <span className="text-red-300">price :</span> {item.price}
+          <h3 className="text-lg font-bold text-green-600">
+            <span className="text-red-300">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+            </span>{" "}{item.price}
           </h3>
           <button
             className="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
             onClick={() => addToCart(item)}
-            
           >
             Add To Cart
           </button>
-          
         </div>
       ))}
     </div>

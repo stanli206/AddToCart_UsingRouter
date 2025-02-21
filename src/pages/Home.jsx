@@ -14,18 +14,16 @@ function Home({ cart, setCart }) {
       .catch((error) => console.error("Error fetching products:", error));
   }, []);
 
-
   const addToCart = (product) => {
     const existingItem = cart.find((item) => item.id === product.id);
     if (existingItem) {
       setMessage("⚠️ Item already in cart!");
     } else {
-      setCart([...cart, { ...product, quantity: 1 }]);      
+      setCart([...cart, { ...product, quantity: 1 }]);
     }
-  
+
     setTimeout(() => setMessage(""), 3000);
   };
-  
 
   return (
     <div className="relative">
