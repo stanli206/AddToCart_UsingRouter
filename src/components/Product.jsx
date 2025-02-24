@@ -18,7 +18,7 @@ function Product({ products, cart, addToCart, removeFromCart }) {
             />
             <h2 className="text-lg font-semibold">{item.title}</h2>
             <p className="text-gray-700 text-sm">
-              {item.description.substring(0, 80)}...
+              {item.description.substring(0, 75)}...
             </p>
             <h3 className="text-lg font-medium">
               <span className="text-red-300">

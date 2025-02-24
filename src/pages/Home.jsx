@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
-import Categories from "../components/Categories";
+import Product from "../components/Product";
 import axios from "axios";
 
 function Home({ cart, setCart }) {
@@ -18,9 +18,10 @@ function Home({ cart, setCart }) {
     const existingItem = cart.find((item) => item.id === product.id);
     if (!existingItem) {
       setCart([...cart, { ...product, quantity: 1 }]);
+      setMessage("✅ Item added to cart!");
+    } else {
+      setMessage("⚠️ Item already in cart!");
     }
-
-    setMessage("✅ Item added to cart!");
     setTimeout(() => setMessage(""), 3000);
   };
 
@@ -39,30 +40,8 @@ function Home({ cart, setCart }) {
         </div>
       )}
       <div className="p-6 pt-20">
-        <Categories
-          title="Men's Clothing"
-          products={products.filter((p) => p.category === "men's clothing")}
-          cart={cart}
-          addToCart={addToCart}
-          removeFromCart={removeFromCart}
-        />
-        <Categories
-          title="Women's Clothing"
-          products={products.filter((p) => p.category === "women's clothing")}
-          cart={cart}
-          addToCart={addToCart}
-          removeFromCart={removeFromCart}
-        />
-        <Categories
-          title="Jewelry"
-          products={products.filter((p) => p.category === "jewelery")}
-          cart={cart}
-          addToCart={addToCart}
-          removeFromCart={removeFromCart}
-        />
-        <Categories
-          title="Electronics"
-          products={products.filter((p) => p.category === "electronics")}
+        <Product
+          products={products}
           cart={cart}
           addToCart={addToCart}
           removeFromCart={removeFromCart}
