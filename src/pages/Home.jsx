@@ -18,7 +18,7 @@ function Home({ cart, setCart }) {
     const existingItem = cart.find((item) => item.id === product.id);
     if (!existingItem) {
       setCart([...cart, { ...product, quantity: 1 }]);
-      setMessage("✅ Item added to cart!");
+      // setMessage(" Item added to cart!");
     } else {
       setMessage("⚠️ Item already in cart!");
     }
