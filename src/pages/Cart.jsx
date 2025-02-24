@@ -65,7 +65,11 @@ function Cart({ cart, setCart }) {
                 >
                   -
                 </button>
-                <span> <p className="inline text-gray-600 text-sm">Quantity: </p>{item.quantity}</span>
+                <span>
+                  {" "}
+                  <p className="inline text-gray-600 text-sm">Quantity: </p>
+                  {item.quantity}
+                </span>
                 <button
                   className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600"
                   onClick={() => updateCartItem(item.id, item.quantity + 1)}
@@ -84,14 +88,21 @@ function Cart({ cart, setCart }) {
           <div className="mt-8 text-right">
             <p className="text-lg">
               Subtotal :{" "}
-              <span className="font-bold"><i class="fa-solid fa-indian-rupee-sign"></i> {subtotal.toFixed(2)}</span>
+              <span className="font-bold">
+                <i class="fa-solid fa-indian-rupee-sign"></i>{" "}
+                {subtotal.toFixed(2)}
+              </span>
             </p>
             <p className="text-lg">
               Discount (10%) :{" "}
-              <span className="font-bold">- <i class="fa-solid fa-indian-rupee-sign"></i> {discount.toFixed(2)}</span>
+              <span className="font-bold">
+                - <i class="fa-solid fa-indian-rupee-sign"></i>{" "}
+                {discount.toFixed(2)}
+              </span>
             </p>
             <p className="text-xl font-bold">
-              Final Total : <i class="fa-solid fa-indian-rupee-sign"></i> {finalTotal.toFixed(2)}
+              Final Total : <i class="fa-solid fa-indian-rupee-sign"></i>{" "}
+              {finalTotal.toFixed(2)}
             </p>
           </div>
         </>

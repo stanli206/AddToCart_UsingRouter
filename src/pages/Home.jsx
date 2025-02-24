@@ -16,12 +16,17 @@ function Home({ cart, setCart }) {
 
   const addToCart = (product) => {
     const existingItem = cart.find((item) => item.id === product.id);
-    if (existingItem) {
-      setMessage("⚠️ Item already in cart!");
-    } else {
+    if (!existingItem) {
       setCart([...cart, { ...product, quantity: 1 }]);
     }
 
+    setMessage("✅ Item added to cart!");
+    setTimeout(() => setMessage(""), 3000);
+  };
+
+  const removeFromCart = (id) => {
+    setCart(cart.filter((item) => item.id !== id));
+    setMessage("❌ Item removed from cart!");
     setTimeout(() => setMessage(""), 3000);
   };
 
@@ -34,26 +39,33 @@ function Home({ cart, setCart }) {
         </div>
       )}
       <div className="p-6 pt-20">
-        {/* <h1 className="text-3xl font-bold text-center mb-6">Product Categories</h1> */}
         <Categories
           title="Men's Clothing"
           products={products.filter((p) => p.category === "men's clothing")}
+          cart={cart}
           addToCart={addToCart}
+          removeFromCart={removeFromCart}
         />
         <Categories
           title="Women's Clothing"
           products={products.filter((p) => p.category === "women's clothing")}
+          cart={cart}
           addToCart={addToCart}
+          removeFromCart={removeFromCart}
         />
         <Categories
           title="Jewelry"
           products={products.filter((p) => p.category === "jewelery")}
+          cart={cart}
           addToCart={addToCart}
+          removeFromCart={removeFromCart}
         />
         <Categories
           title="Electronics"
           products={products.filter((p) => p.category === "electronics")}
+          cart={cart}
           addToCart={addToCart}
+          removeFromCart={removeFromCart}
         />
       </div>
     </div>
