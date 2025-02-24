@@ -16,7 +16,7 @@ This is a simple shopping cart project built using ReactJS, React Router, JavaSc
 🏷 Product name, price, quantity, and a "Remove from Cart(Remove)" button.🔼🔽 Option to increase or decrease the quantity of each item.💰 Dynamic total price calculation per item.📊 Total cart price updates automatically based on quantity.🎉 A 10% discount applied to the final price.🔄 Uses React Router for navigation between the home page (product list) and the cart page.🔙 A "Close Cart" button redirects users back to the home page.
 
 ## 🔥Preview
-![Screenshot 2025-02-21 130542](https://github.com/user-attachments/assets/92347b22-8607-4e8a-8984-f8a945713c0e)
+![Screenshot 2025-02-25 011315](https://github.com/user-attachments/assets/2ba6e5d9-a3bf-4c0b-8e35-cebd1dc57e1c)
 
 ![Screenshot 2025-02-21 125230](https://github.com/user-attachments/assets/1bec2ec3-12e3-44ab-8773-95712bde63ab)
 
