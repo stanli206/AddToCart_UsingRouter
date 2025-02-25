@@ -29,7 +29,7 @@ function Product({ products, cart, addToCart, removeFromCart }) {
 
             {isInCart ? (
               <button
-                className="mt-3 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600"
+                className="mt-3 bg-red-400 text-white px-4 py-2 rounded-lg hover:bg-red-600"
                 onClick={() => removeFromCart(item.id)}
               >
                 Remove from Cart
