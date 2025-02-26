@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Product from "../components/Product";
 import axios from "axios";
+import CurrentOffers from "../components/CurrentOffers";
 
 function Home({ cart, setCart }) {
   const [products, setProducts] = useState([]);
@@ -33,13 +34,14 @@ function Home({ cart, setCart }) {
 
   return (
     <div className="relative">
-      <Navbar cartCount={cart.length} />
+      <CurrentOffers/>
+      {/* <Navbar cartCount={cart.length} /> */}
       {message && (
         <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 bg-gray-800 text-white py-2 px-4 rounded-lg">
           {message}
         </div>
       )}
-      <div className="p-6 pt-20">
+      <div className="p-6 pt-5">
         <Product
           products={products}
           cart={cart}

@@ -14,7 +14,7 @@ function Product({ products, cart, addToCart, removeFromCart }) {
             <img
               src={item.image}
               alt={item.title}
-              className="w-32 h-32 object-contain mb-4"
+              className="w-32 h-32 object-contain "
             />
             <h2 className="text-lg font-semibold">{item.title}</h2>
             <p className="text-gray-700 text-sm">
@@ -29,7 +29,7 @@ function Product({ products, cart, addToCart, removeFromCart }) {
 
             {isInCart ? (
               <button
-                className="mt-3 bg-red-400 text-white px-4 py-2 rounded-lg hover:bg-red-600"
+                className="mt-3 bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-red-600"
                 onClick={() => removeFromCart(item.id)}
               >
                 Remove from Cart
@@ -46,6 +46,7 @@ function Product({ products, cart, addToCart, removeFromCart }) {
         );
       })}
     </div>
+    
   );
 }
 
