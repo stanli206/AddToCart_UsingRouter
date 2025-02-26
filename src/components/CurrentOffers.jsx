@@ -5,8 +5,8 @@ import "swiper/css";
 
 function CurrentOffers() {
   const images = [
-    "/1400x800_today_live._CB549732867_.gif",
     "/Clearance_Store._CB542298117_.jpg",
+    "/1400x800_today_live._CB549732867_.gif",
     "/Deals_on_1_lakh_styles._CB542298117_.jpg",
     "/1500x300._CB550956210_.gif",
     "/Amazon_JanBAU_Gaming2_1400x800._SX1242_QL85_.jpg",
